@@ -73,7 +73,7 @@ async function getTodos() {
 
 getTodos();
 
-let isUpdating;
+let isUpdating; 
 
 let todo;
 const input = document.querySelector(".new-task");
