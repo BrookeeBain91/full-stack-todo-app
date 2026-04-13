@@ -9,8 +9,11 @@ body {
 }
 
 h1 {
+    text-align: center;
     font-size: 50px;
-    margin-top: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px; 
+    text-decoration: underline;
 }
 
 input {
@@ -19,7 +22,7 @@ input {
     padding: 10px;
     margin: 20px auto;
     border-radius: 30px;
-    border: 2px solid black;
+    border: 2px solid rgb(3, 3, 3);
 }
 
 .submit-btn {
@@ -27,7 +30,9 @@ input {
     padding: 10px;
     border-radius: 30px;
     cursor: pointer;
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(248, 209, 245);
+    color: rgb(7, 7, 7);
 }
 
 .todo-items {
@@ -38,7 +43,7 @@ input {
 .todo-items li {
     list-style-type: none;
     margin: 10px;
-    border: 2px solid black;
+    border: 2px solid rgb(2, 2, 2);
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -50,5 +55,171 @@ input {
     padding: 5px;
     border-radius: 30px;
     cursor: pointer;
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(248, 209, 245);
+    margin-left: 10px;
+}
+
+
+
+
+/* Navbar background colour */
+.navbar {
+   height: 70px;
+    background-color: #507252 !important;
+    position: relative;
+        z-index: 1000;
+    /* change this colour */
+}
+
+/* Navbar text (links + logo) */
+.navbar a {
+    color: rgb(248, 209, 245) !important;
+}
+
+/* Optional: hover effect */
+.navbar a:hover {
+    color: #c8e6c9 !important;
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+.navbar-brand {
+    font-size: 28px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 20px;
+}
+
+.navbar-collapse {
+    background-color: #507252;
+    position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+    /* your colour */
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 576px) {
+    .container div {
+        flex-direction: column;
+    }
+
+    input {
+        width: 90%;
+    }
+}
+
+
+
+/* Center everything */
+.home-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image: url("/frontend/Images/Home\ Page.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Dark overlay */
+
+
+/* Keep content above overlay */
+.home-content {
+    display: flex;
+        flex-direction: column;
+        /* THIS puts buttons under heading */
+        align-items: center;
+}
+
+/* Heading */
+.home-page h1 {
+    font-size: 60px;
+    color: rgb(14, 101, 50);
+    margin-bottom: 30px;
+}
+
+/* Buttons container */
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    gap: 20px;
+}
+
+/* Buttons */
+.home-btn {
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: rgb(248, 209, 245);
+    color: rgb(71, 101, 78);
+    text-decoration: none;
+    border: 2px solid rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.home-btn:hover {
+    background-color: rgb(248, 209, 245);
+    color: #2e7d32;
+}
+
+@media (max-width: 576px) {
+    .home-buttons {
+        flex-direction: column;
+    }
+
+    .home-page h1 {
+        font-size: 35px;
+    }
+}
+
+
+.contact-card {
+    max-width: 600px;
+    /* controls width */
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.contact-card h4 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-card p {
+    font-size: 24px;
+    text-align: center;
+}
+
+.contact-page {
+    background-color: #c1d7c3;
+}
+
+.contact-heading {
+    font-size: 60px;
+    margin-top: 80px;
 }
