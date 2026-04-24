@@ -134,7 +134,7 @@ input {
     align-items: center;
     text-align: center;
 
-    background-image: url("/frontend/Images/Home\ Page.jpg");
+    background-image: url("Images/Home\ Page.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
